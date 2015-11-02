@@ -1,0 +1,10 @@
+# silly-docker-stuff
+
+machine:
+  services:
+    - docker
+    
+dependencies:
+  override:
+    - docker info
+    - docker build -t silly-docker-stuff .
